@@ -1,0 +1,164 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* color: #a09038; */
+    color: #f6d937;
+}
+
+ul {
+    list-style: none;
+    font-size: 16px;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    /* background-image: url('images/pexels-faik-akmd-1025469.jpg');
+    background-repeat: no-repeat;
+    background-position: center center fixed;
+    background-size: cover; */
+    background: url('images/pexels-adrien-olichon-2387793.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 1px 1px 10px 1px whitesmoke;
+    border-bottom: 5px ridge white;
+}
+
+header ul {
+    display: flex;
+
+}
+
+header ul li {
+    padding: 5px;
+    /* border-right: 2px dashed white; */
+}
+
+header ul li a {
+    transition: 300ms;
+}
+
+header ul li a:hover {
+    color: #c0a717;
+    text-decoration: underline;
+
+}
+
+.container {
+    text-align: center;
+}
+
+.container .name h1 {
+    font-size: 60px;
+}
+
+.container .name h5 {
+    font-size: 25px;
+}
+
+#arrow {
+    font-size: 35px;
+    cursor: pointer;
+    animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.active {
+    display: block !important;
+}
+
+#about p {
+    max-width: 600px;
+    margin: auto;
+    font-size: 20px;
+    color: #f6d937;
+    margin-bottom: 20px;
+}
+
+.form {
+    width: 40%;
+    margin: auto;
+    font-size: 18px;
+    
+
+
+    /* border: thick double #fff;
+    padding: 15px; */
+}
+
+.form input {
+    width: 50%;
+    height: 30px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    
+}
+
+.form button {
+    width: 15%;
+    padding: 5px 10px;
+    background: linear-gradient(to right, #c0a717 50%, #9c551b 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color: white;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 300ms ease-out;
+    border-radius: 0px 5px 5px 0px;
+    margin-top: 10px;
+    margin-left: -5px;
+
+}
+
+.form button:hover {
+    background-position: left bottom;
+}
+
+img {
+    width: 100px;
+    border-radius: 200px;
+}
+
+@media only screen and (max-width: 768px){
+    .form{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container .name h1 {
+        font-size: 30px
+    }
+
+    .container .name h5 {
+        font-size: 15px
+    }
+
+    #about p {
+        max-width: 80%;
+        text-align: justify;
+    }
+
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5d339f2b30.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,900;1,100;1,300&display=swap" rel="stylesheet">
+    <title>Portfolio Patrick</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="images/profile250.png" alt="espaco para logo">
+        </div>
+
+        <ul>
+            <li>
+                <a href="github.com/Patrick-Jabba">github</a>
+            </li>
+            <li>
+                <a href="linkedin.com/in/patrick-monteiro-fischer-1316369b/">linkedIn</a>
+            </li>
+            <li>
+                <a href="mailto:monteiromonterio@gmail.com">e-mail</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Patrick Monteiro Fischer</h1>
+                <h5>Full Stack Developer Jr.</h5>
+            </div>
+            <div id="arrow" onclick="displayAbout()">
+                <i id="animation" class="fa-solid fa-sort-down"></i>
+            </div>
+                <div id="about" style="display: none;" >
+                    <p>
+                        I'm a brazilian software student at SERRATEC to become a full stack developer. Recently approved for Hiring Coders 3, a training course in programming and digital commerce.
+                        Leaving behind my law degree to become software developer.
+                    </p>
+                </div>
+
+            <div class="form">
+                <div>
+                    <p>
+                       Get in touch:
+                    </p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="  Your best e-mail :)">
+                    <button>Send!</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script>
+        function displayAbout(){
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate')
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+</body>
+    
+</html>
