@@ -5,7 +5,7 @@ import * as fs from 'fs';
 import { createServer, ServerResponse, IncomingMessage } from 'http';
 
 // Definição de porta
-const port = 5000
+const port = 3000
 
 const server = createServer((request: IncomingMessage, response: ServerResponse) => {
     //Implementar código aqui

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Hello World</title>
+
+</head>
+
+<body>
+    <div id="caixa">
+        <p id="p1">Primeiro Parágrafo.</p>
+        <p id="p2">Segundo Parágrafo.</p>
+    </div>
+
+
+
+    <script>
+        var para = document.createElement("p");
+        var node = document.createTextNode("Terceiro Parágrafo.");
+        var element = document.getElementById("caixa");
+        element.appendChild(para.appendChild(node))
+    </script>
+
+
+
+
+
+</body>
+
+</html>
