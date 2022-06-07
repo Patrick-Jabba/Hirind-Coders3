@@ -1,4 +1,3 @@
-import { user } from 'pg/lib/defaults';
 import Sequelize, { Model} from 'sequelize';
 import bcrypt from 'bcryptjs';
 
@@ -20,6 +19,14 @@ class User extends Model{
         })
 
         return this;
+    }
+
+    static associate(models){
+        this.belongsTo( models.File, {foreignKey: 'photo_id', as: 'photo'})
+    }
+    
+    checkPassword(password){
+        return bcrypt.compare(password, this.password_hash)
     }
 }
 
