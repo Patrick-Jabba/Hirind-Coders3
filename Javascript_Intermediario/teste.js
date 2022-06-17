@@ -1,5 +1,7 @@
-var str = "123456789";
-var p = /[^5-7]/g;
-var resultado = str.match(p);
+let foo = function foo2 () { 
 
-console.log(resultado)
+    console.log(foo === foo2) 
+   
+   } 
+   
+   foo() 
